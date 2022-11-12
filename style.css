@@ -229,6 +229,8 @@
   width: 20vw;
 }
 
+/* Skills and interest styling */
+
 #interests {
   display: flex;
   flex-direction: column;
