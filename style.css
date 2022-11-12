@@ -1,0 +1,108 @@
+/* navbar styling */
+.navbar {
+  background-color: rgb(133, 133, 211);
+}
+
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar .navbar-brand:hover {
+  color: rgb(236, 15, 15);
+  transform: scale(1.05);
+}
+
+.navbar #navbarNav .navbar-nav .nav-item:hover {
+  background-color: rgb(209, 209, 230);
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+.navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(184, 20, 20);
+}
+
+/* Introduction styling */
+.introduction {
+  width: 100%;
+  height: 92vh;
+  text-align: center;
+  background-color: #a2a2b6;
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #a2a2b6 20%,
+      #a2a2b6 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #a2a2b6 20%,
+        #a2a2b6 80%,
+        transparent 80%,
+        transparent
+      )
+      10px 10px,
+    linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, #444cf7 0.8px, #a2a2b6 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .introduction {
+    flex-direction: column;
+  }
+}
+
+.introduction img {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .introduction img {
+    margin-bottom: 10px;
+  }
+}
+
+.introduction h2 {
+  color: rgb(236, 15, 15);
+  font-family: "Vollkorn SC", serif;
+}
+
+.introduction p {
+  font-family: "Vollkorn SC", serif;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+/* About Me Styling */
+
+#about-me {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgb(162, 162, 182, 0.3);
+  font-family: "Vollkorn SC", serif;
+}
+
+#about-me h2 {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+  color: rgb(105, 110, 222);
+  text-shadow: 7px 2px 0px rgba(230, 140, 140, 0.6);
+}
+
+#about-me p {
+  text-align: justify;
+  padding: 20px 40px;
+  font-size: 2.5vw;
+}
