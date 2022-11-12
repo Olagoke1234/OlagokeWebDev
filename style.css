@@ -16,6 +16,7 @@
   background-color: rgb(209, 209, 230);
   transform: scale(1.05);
   font-weight: bold;
+  padding-left: 10px;
 }
 
 .navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
@@ -196,9 +197,9 @@
 
 #projects {
   background-color: rgb(240, 186, 186);
-  margin: 0 auto 40px auto;
+  margin: 50px auto 60px auto;
   text-align: center;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 #projects h2 {
@@ -213,7 +214,7 @@
 .tiles {
   /* background-color: rgb(162, 162, 182, 0.3); */
   width: 200px;
-  height: 330px;
+  max-height: 330px;
   padding: 40px 0 10px 0;
   margin: 10px auto;
   display: flex;
@@ -226,4 +227,50 @@
 .tiles img {
   height: 15vw;
   width: 20vw;
+}
+
+#interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.skills-interest-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+}
+
+.skills-interest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(25, 135, 84);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.skills-interest svg {
+  margin-right: 10px;
+  transform: scale(1.5);
+  background-color: white;
+}
+
+#interests {
+  margin-bottom: 20px;
+}
+
+#interests h2 {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+  color: rgb(105, 110, 222);
+  /* text-shadow: 7px 2px 0px black; */
+  margin-bottom: 40px;
 }
