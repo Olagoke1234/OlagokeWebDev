@@ -276,3 +276,37 @@
   /* text-shadow: 7px 2px 0px black; */
   margin-bottom: 40px;
 }
+
+/* Footer Styling */
+
+#contact {
+  display: flex;
+  background-color: #0c0c1a;
+  padding: 15px 20px 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  display: flex;
+  flex: 30%;
+}
+
+.copyright p {
+  color: rgb(59, 137, 213);
+}
+
+.accounts {
+  display: flex;
+  flex: 70%;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.accounts a {
+  margin-left: 40px;
+}
+
+.accounts a p {
+  font-size: 20px;
+}
