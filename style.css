@@ -10,6 +10,7 @@
 .navbar .navbar-brand:hover {
   color: rgb(236, 15, 15);
   transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar #navbarNav .navbar-nav .nav-item:hover {
@@ -17,10 +18,12 @@
   transform: scale(1.05);
   font-weight: bold;
   padding-left: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
   color: rgb(184, 20, 20);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Introduction styling */
