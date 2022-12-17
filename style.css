@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* navbar styling */
 .navbar {
   background-color: rgb(133, 133, 211);
@@ -8,13 +12,11 @@
 }
 
 .navbar .navbar-brand:hover {
-  color: rgb(236, 15, 15);
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
 }
 
 .navbar #navbarNav .navbar-nav .nav-item:hover {
-  background-color: rgb(209, 209, 230);
   transform: scale(1.05);
   font-weight: bold;
   padding-left: 10px;
@@ -22,95 +24,14 @@
 }
 
 .navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
-  color: rgb(184, 20, 20);
+  color: white;
   transition: all 0.2s ease-in-out;
 }
 
 /* Introduction styling */
 .introduction {
-  width: 100%;
-  height: 92vh;
-  text-align: center;
-  background-color: #a2a2b6;
-  opacity: 1;
-  background: radial-gradient(
-      circle,
-      transparent 20%,
-      #a2a2b6 20%,
-      #a2a2b6 80%,
-      transparent 80%,
-      transparent
-    ),
-    radial-gradient(
-        circle,
-        transparent 20%,
-        #a2a2b6 20%,
-        #a2a2b6 80%,
-        transparent 80%,
-        transparent
-      )
-      10px 10px,
-    linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px,
-    linear-gradient(90deg, #444cf7 0.8px, #a2a2b6 0.8px) -0.4px 0;
-
-  background: -moz-radial-gradient(
-      circle,
-      transparent 20%,
-      #a2a2b6 20%,
-      #a2a2b6 80%,
-      transparent 80%,
-      transparent
-    ),
-    -moz-radial-gradient(
-        circle,
-        transparent 20%,
-        #a2a2b6 20%,
-        #a2a2b6 80%,
-        transparent 80%,
-        transparent
-      ) 10px 10px,
-    -moz-linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px,
-    -moz-linear-gradient(90deg, #444cf7 0.8px, #a2a2b6 0.8px) -0.4px 0;
-
-  background: -ms-radial-gradient(
-      circle,
-      transparent 20%,
-      #a2a2b6 20%,
-      #a2a2b6 80%,
-      transparent 80%,
-      transparent
-    ),
-    -ms-radial-gradient(
-        circle,
-        transparent 20%,
-        #a2a2b6 20%,
-        #a2a2b6 80%,
-        transparent 80%,
-        transparent
-      ) 10px 10px,
-    -ms-linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px,
-    -ms-linear-gradient(90deg, #444cf7 0.8px, #a2a2b6 0.8px) -0.4px 0;
-
-  background: -o-radial-gradient(
-      circle,
-      transparent 20%,
-      #a2a2b6 20%,
-      #a2a2b6 80%,
-      transparent 80%,
-      transparent
-    ),
-    -o-radial-gradient(
-        circle,
-        transparent 20%,
-        #a2a2b6 20%,
-        #a2a2b6 80%,
-        transparent 80%,
-        transparent
-      ) 10px 10px,
-    -o-linear-gradient(#444cf7 0.8px, transparent 0.8px) 0 -0.4px,
-    -o-linear-gradient(90deg, #444cf7 0.8px, #a2a2b6 0.8px) -0.4px 0;
-
-  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+  height: 100vh;
+  background-color: rgb(244, 242, 240);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -136,7 +57,7 @@
 }
 
 .introduction h2 {
-  color: rgb(236, 15, 15);
+  color: #696ede;
   font-family: "Vollkorn SC", serif;
 }
 
@@ -151,15 +72,20 @@
 #about-me {
   text-align: center;
   padding: 50px 20px;
-  background-color: rgb(162, 162, 182, 0.3);
+  background-color: white;
   font-family: "Vollkorn SC", serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #about-me h2 {
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
-  color: rgb(105, 110, 222);
+  color: black;
   /* text-shadow: 7px 2px 0px rgba(230, 140, 140, 0.6); */
 }
 
@@ -167,6 +93,7 @@
   text-align: justify;
   padding: 20px 40px;
   font-size: 2.5vw;
+  color: #696ede;
 }
 
 /* certifications styling */
@@ -175,13 +102,19 @@
   padding: 70px 20px;
   text-align: center;
   font-family: "Vollkorn SC", serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(244, 242, 240);
 }
 
 .certified-container h2 {
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
-  color: rgb(105, 110, 222);
+  color: black;
   /* text-shadow: 7px 2px 0px rgba(230, 140, 140, 0.6); */
   margin-bottom: 40px;
 }
@@ -199,19 +132,39 @@
 /* Projects Styling */
 
 #projects {
-  background-color: rgb(240, 186, 186);
+  /* background-color: rgb(240, 186, 186); */
   margin: 50px auto 60px auto;
   text-align: center;
   padding: 50px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #projects h2 {
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
-  color: rgb(105, 110, 222);
+  color: black;
   /* text-shadow: 7px 2px 0px black; */
   margin-bottom: 40px;
+}
+
+#btn {
+  background-color: #696ede;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+
+#btn:hover {
+  color: black;
+  transform: scale(1.1);
 }
 
 .tiles {
@@ -240,6 +193,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100vh;
 }
 
 .skills-interest-container {
@@ -256,7 +210,7 @@
   margin-right: 30px;
   margin-bottom: 10px;
   color: white;
-  background-color: rgb(25, 135, 84);
+  background-color: #696ede;
   border-radius: 5px;
   padding: 15px;
 }
@@ -275,7 +229,7 @@
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
-  color: rgb(105, 110, 222);
+  color: black;
   /* text-shadow: 7px 2px 0px black; */
   margin-bottom: 40px;
 }
